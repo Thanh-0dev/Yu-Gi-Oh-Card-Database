@@ -1,0 +1,230 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+label {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.yu-container-page-download {
+  display: flex;
+  flex-direction: column;
+  margin: 64px auto;
+  padding: 0 88px;
+  padding-top: 32px;
+  align-self: center;
+  max-width: 1440px;
+}
+
+.yu-container-download {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 50%;
+}
+
+.yu-download {
+  display: flex;
+  flex-direction: column;
+}
+
+.yu-download > img {
+  width: 304px;
+  margin-bottom: 32px;
+}
+
+.yu-connect {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.yu-online,
+.yu-in-game {
+  display: flex;
+  flex-direction: column;
+}
+
+.yu-online > p,
+.yu-in-game > p {
+  margin-bottom: 8px;
+}
+
+.yu-online {
+  margin-right: 64px;
+}
+
+.yu-online > h5 {
+  position: relative;
+}
+
+.yu-in-game > h5 {
+  position: relative;
+}
+
+.yu-online > h5::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #15e3ff;
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+.yu-in-game > h5::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #59d98c;
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}
+
+.yu-download-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  background: #0062f5;
+  border-radius: 4px;
+  border: none;
+  width: 224px;
+  transition: all 0.2s ease;
+}
+
+.yu-download-btn svg {
+  margin-right: 16px;
+  fill: rgb(255, 255, 255);
+}
+
+.yu-download-btn a {
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+.yu-download-btn a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.yu-download-btn:hover {
+  background: rgb(0, 77, 192);
+}
+
+.yu-availabe {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.yu-availabe svg {
+  margin: 0 8px;
+}
+
+.yu-container-download > img {
+  right: -100%;
+  align-self: center;
+  object-fit: cover;
+  position: absolute;
+}
+
+/********************************************/
+
+.yu-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.yu-row1,
+.yu-row2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.yu-row1 img {
+  width: 30%;
+  height: 100%;
+  margin-right: 10%;
+}
+
+.yu-row2 img {
+  width: 30%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+@media (max-width: 1080px) {
+  .yu-container-page-download {
+    padding: 0 88px;
+    padding-top: 0;
+  }
+
+  .yu-container-download > img {
+  }
+
+  .yu-row1,
+  .yu-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+
+  .yu-row1 img {
+    width: 80%;
+    height: 80%;
+    margin-right: 0;
+  }
+
+  .yu-row2 img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .yu-container-page-download {
+    padding: 0 24px;
+    padding-top: 0;
+  }
+
+  .yu-container-download > img {
+    display: none;
+  }
+
+  .yu-row1,
+  .yu-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+
+  .yu-row1 img {
+    width: 80%;
+    height: 80%;
+    margin-right: 0;
+  }
+
+  .yu-row2 img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
